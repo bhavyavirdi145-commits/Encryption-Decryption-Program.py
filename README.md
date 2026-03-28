@@ -60,6 +60,27 @@ End
 
 ## Code Architecture
 
+Cipher Class
+│
+├── init()
+│ ├── Defines character set
+│ ├── Creates shuffled key
+│
+├── encrypt(plaintext)
+│ ├── Maps each character using key
+│ ├── Returns encrypted text
+│
+├── decrypt(encrypted_text)
+│ ├── Reverse mapping using key
+│ ├── Returns original text
+│
+main()
+│
+├── Takes user input
+├── Calls encrypt()
+├── Calls decrypt()
+└── Displays output
+
 ### 1. Cipher Class
 Handles encryption and decryption logic.
 
@@ -149,7 +170,9 @@ Decrypted: Hello123!
 ## Author
 
 - Bhavya Virdi
-
+- 25BOE10010
+- VIT Bhopal University
+  
 ## License
 
 This project is open-source and available under the MIT License.
